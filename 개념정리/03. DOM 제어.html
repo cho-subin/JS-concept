@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        //DOM제어
+        //document객체 사용법
+        //html태그랑 관련된 객체
+        function myFunc() {
+            alert("클릭")
+            document.getElementById("box").innerText = "글자추가"
+            //document객체 내장메서드 getElementById를 써서
+            //아이디가 box인 요소에 접근해서 거기 글자 "글자추가" 넣겠다.
+            document.getElementById("box").style.backgroundColor = "blue"
+            //document객체 내장 메서드 getElementByID를 써서
+            //아이디가 box인 요소에 접근해서 거기 배경색 파란색으로
+        }
+    </script>
+</head>
+
+<body>
+    <div id="box"></div>
+    <button onclick="myFunc()">클릭</button>
+</body>
+
+</html>

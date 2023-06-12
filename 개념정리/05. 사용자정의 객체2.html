@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var person = new Object()//Object객체 생성
+        //자바의 Object객체 상속
+        person.name = "김철수"//객체의 내장변수,멤버변수
+        person.age = 20
+        person.height = 176.5
+        person.introduce = function () {//멤버메서드,멤버함수
+            alert("함수!")
+        }
+        //여기서부터는 객체 사용
+        document.write("이름:" + person.name)
+        document.write("나이:" + person.age)
+        document.write("키:" + person.height)
+        person.introduce()//person객체의 내장메서드 introduce호출
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
